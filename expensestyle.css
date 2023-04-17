@@ -1,0 +1,33 @@
+body{
+
+    background-color: sandybrown;
+    background-repeat: no-repeat;
+    margin: 10px 10px;
+    font-size: 17px;
+    padding: 8px;
+}
+
+label {
+    font-family: "Raleway", sans-serif;
+    font-size: 15pt;
+  }
+.expense input{
+    font-size: 12px;
+    width: 10%;
+    border: 10;
+    outline: none;
+}
+.expense button{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px;
+    padding: 8px 6px;
+    width: 20%;
+    border: 0;
+    border-radius: 2px;
+    background-color: whitesmoke
+
+}
+
+
+

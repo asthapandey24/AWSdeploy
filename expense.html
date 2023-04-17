@@ -5,30 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="expensestyle.css">
+
 </head>
 <body>
+    <div class="expense">
     <form onsubmit="expenseStorage(event)">
         <div>
             <label for="expense">choose expndituremoney</label>
             <input type="number" id="id0"  name="expense" >
             <label for="Discription">choose a Discription</label>
             <input type="text" id="id1"  name="discription">
-        <label for="category">choose a category</label>
+          <label for="category">choose a category</label>
         <select name="category" id ="id2">
          <option value="movie">movie</option>
         <option value="food">food</option>
          <option value="travelling">travelling</option>
          </select>
-         <button>Add-Expense </button>
+         <p><button class="add">Add-Expense </button></p>
         </div>
         </form>
         <div id="message"></div>
-        <button id="rzp-button1">Buy premium</button>
-        <button onclick="download()" id="downloadexpense">Download File</button>
-        <button onclick="downloadfiledata()" id="downloadexpenseAllFile">All Downloaded File</button>
+        <button class="premium" id="rzp-button1">Buy premium</button>
+        <button class="file1" onclick="download()" id="downloadexpense">Download File</button>
+       <button onclick="downloadfiledata()" id="downloadexpenseAllFile">All Downloaded File</button>
          
         <form id="form2">
-        <p id="msg"></p>
+        <p class="rows" id="msg"></p>
         Rows per pages <select id="rowPerPage">
             <option >Row Size</option>
             <option value="5" >5</option>
@@ -53,6 +56,6 @@
          <script src="expense.js"></script>
 
          
-
+</div>
 </body>
 </html>
