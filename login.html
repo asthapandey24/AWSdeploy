@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
+    <div class="login">
     <form onsubmit="login(event)">
-    <label for="email">Enter Email</label>
+   <p> <label for="email">Enter Email</label></p>
     <input type="text" id="id1" name="email">
-    <label for="password">Enter password</label>
+   <p> <label for="password">Enter password</label></p>
     <input type="password" id="id2" name="password">
-    <button>Login</button>
+    <p><button>Login</button></p>
     </form>
     <div>
         <button onclick="forgotpassword(event)">Forgot Password</button>
@@ -20,5 +22,6 @@
     <a href="e.html">New User - signup</a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
     <script src="login.js"></script>
+    </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const path = require('path')
 const express=require('express');
-const helmet = require('helmet')
+//const helmet = require('helmet')
 
 var cors = require('cors');
 
@@ -28,7 +28,7 @@ const app=express();
 app.use(cors());
 
 dotenv.config();
-app.use(helmet());
+//app.use(helmet());
 //app.use(bodyParser.urlencoded({ extended: true }));
 //app.use(bodyParser.json());
 app.use(express.json());
@@ -39,6 +39,10 @@ app.use('/expensetable', expenseRouter)
 app.use('/purchase', purchaseRoutes)
 app.use('/premium', premiumFeatureRoutes)
 app.use('/password', forgotPassword)
+app.use((req,res)=>{
+	res.sendFile(path.join(__dirname,`${req.url}`))
+})
+
 
 User.hasMany(expensedata)
 expensedata.belongsTo(User)
